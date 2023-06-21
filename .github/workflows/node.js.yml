@@ -30,18 +30,20 @@ jobs:
     
       # - name: Deploy to UpCloud
       #   env:
-      #   UPCLOUD_USERNAME: ${{ secrets.UPCLOUD_USERNAME }}
-      #   UPCLOUD_PASSWORD: ${{ secrets.UPCLOUD_PASSWORD }}
+      #     UPCLOUD_USERNAME: ${{ secrets.UPCLOUD_USERNAME }}
+      #     UPCLOUD_PASSWORD: ${{ secrets.UPCLOUD_PASSWORD }}
       #   run: |
       #     # Install upctl
       #     curl -s https://get.upbound.io/up/install.sh | sh
           
       #     # Set UpCloud region and server details
-      #     export UPCLOUD_REGION=$YOUR_UPCLOUD_REGION
-      #     export UPCLOUD_SERVER=$YOUR_UPCLOUD_SERVER
+      #     export UPCLOUD_REGION=$UPCLOUD_REGION
+      #     export UPCLOUD_SERVER_ID=$UPCLOUD_SERVER_ID
         
       #     # Deploy using upctl
-      #     upctl deploy -s <YOUR_STACK_NAME> -t <YOUR_TEMPLATE_FILE>
+      #     upctl deploy -s <YOUR_STACK_NAME> -t <YOUR_TEMPLATE_FILE> --wait --timeout 300
+
+      
 
 
 
