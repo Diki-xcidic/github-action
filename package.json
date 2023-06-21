@@ -1,0 +1,30 @@
+{
+  "name": "github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --watchAll --verbose --silent --runInBand --env node",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diki-xcidic/github-action.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diki-xcidic/github-action/issues"
+  },
+  "homepage": "https://github.com/Diki-xcidic/github-action#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
